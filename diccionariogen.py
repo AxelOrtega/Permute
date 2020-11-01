@@ -48,7 +48,7 @@ if __name__ == '__main__':
         default=2, help='Maximo de caracteres')
     parser.add_argument(
         '-s', '--salida',
-        default='salida/wordlist.txt', help='salida of wordlist file.')
+        default='salida/wordlist.txt', help='salida del diccionario.')
 
     args = parser.parse_args()
     if args.caracteres is None:
