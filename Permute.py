@@ -33,7 +33,7 @@ elif option == 2:
    file_path = raw_input('Direccion del diccionario (txt) :')
    '''exit() ''' 
 elif option == 3:
-   os.system("python3 /cupp/cupp.py -i")
+   os.system("cd cupp; python3 cupp.py -i")
    '''exec(open("cupp.py").read())'''
    file_path = raw_input('Direccion del diccionario (txt) :')
 else:
