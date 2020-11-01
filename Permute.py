@@ -21,8 +21,8 @@ def main():
    print ' ______________________________________________________________________'
 main()
 print '[1] Iniciar'
-print '[2] Crear Diccioanrio Basico'
-print '[3] Crear Diccioanrio Avanzado(cupp)'
+print '[2] Crear Diccionario Basico'
+print '[3] Crear Diccionario Avanzado(cupp)'
 print '[4] Salir'
 option = input('>')
 if option == 1:
