@@ -25,8 +25,8 @@ option = input('==>')
 if option == 1:
    file_path = raw_input('Direccion del diccionario (txt) :')
 elif option == 2:
-   os.system("python3 cupp.py -i")
-   '''exec(open("cupp.py").read())'''
+   os.system("python3 diccionariogen.py -i")
+   '''exec(open("diccionariogen.py").read())'''
 else:
    system('clear')
    exit()
